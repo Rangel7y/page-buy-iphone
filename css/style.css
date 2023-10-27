@@ -55,6 +55,10 @@ body {
   height: fit-content;
   font-size: small;
   padding: 0 0.75rem;
+  transition: all 180ms ease-in-out;
+}
+#header-ctn nav ul li:hover {
+  transform: scale(1.1);
 }
 #header-ctn nav ul li a {
   color: var(--text-light);
