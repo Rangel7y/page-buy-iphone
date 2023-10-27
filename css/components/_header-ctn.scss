@@ -41,6 +41,12 @@
 
                 padding: 0 0.75rem;
 
+                transition: all 180ms ease-in-out;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+
                 a{
                     color: var(--text-light);
                     
