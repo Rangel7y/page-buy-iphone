@@ -118,6 +118,20 @@ body {
 /* _MAIN-CTN */
 #main-ctn {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* IMPORT _iPHONE-SECTION.SCSS */
+/* _iPHONE-SECTION */
+#iphone-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#iphone-section text-wrapper {
+  display: flex;
 }
 
 /* IMPORT _RESPONSIVE.SCSS */
