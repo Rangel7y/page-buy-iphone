@@ -1,5 +1,34 @@
 
 /* _iPHONE-SECTION */
 #iphone-section{
+    display: flex;
+    flex-direction: column;
 
+    margin-top: 25px;
+
+    #text-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        p{
+            text-align: center;
+
+            padding: 10px;
+        }
+    }
+}
+
+/* SELECT_MODEL_IPHONE */
+#select-model-iphone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--solitude-color); 
+
+    img{
+        width: 300px;
+    }
 }
