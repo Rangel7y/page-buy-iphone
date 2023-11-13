@@ -160,6 +160,10 @@ body {
   width: 40px;
   height: 40px;
   border: none;
+  transition: all 180ms ease-in-out;
+}
+#select-model-iphone .arrow:hover {
+  transform: scale(1.1);
 }
 
 /* ARROWS ION-ICON */
