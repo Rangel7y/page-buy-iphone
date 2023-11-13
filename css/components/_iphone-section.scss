@@ -24,11 +24,29 @@
 #select-model-iphone{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+
+    height: 300px;
+
+    padding: 8px;
 
     background-color: var(--solitude-color); 
 
     img{
-        width: 300px;
+        width: fit-content;
+        height: 100%;
     }
+
+    .arrow{
+        width: 40px;
+        height: 40px;
+        
+        border: none;
+    }
+}
+
+/* ARROWS ION-ICON */
+ion-icon{
+    width: 100%;
+    height: 100%;
 }
