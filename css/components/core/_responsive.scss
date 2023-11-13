@@ -1,1 +1,19 @@
 
+/* Mobile */
+@media (max-width: 400px){
+    #header-ctn{
+        nav{
+            ul{
+                li{
+                    display: none;
+                }
+            }
+        }
+        #search{
+            margin-left: 180px;
+        }
+        #logo, #search, #cart{
+            display: flex;        
+        }
+    }
+}
