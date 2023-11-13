@@ -29,13 +29,21 @@ body {
 #header-ctn {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  flex-direction: column;
   top: 0;
   position: sticky;
   width: 100%;
-  height: 50px;
-  background-color: var(--bg-primary);
+  height: 100px;
   opacity: 0.9;
+}
+#header-ctn nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  background-color: var(--bg-primary);
 }
 #header-ctn nav ul {
   display: flex;
@@ -65,8 +73,32 @@ body {
   text-decoration: none;
 }
 
+/* _BOTTOM-HEADER */
+#bottom-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+  padding: 10px;
+}
+
 /* IMPORT _MAIN.SCSS */
 /* _MAIN-CTN */
 #main-ctn {
   display: flex;
+}
+
+/* IMPORT _RESPONSIVE.SCSS */
+/* Mobile */
+@media (max-width: 400px) {
+  #header-ctn nav ul li {
+    display: none;
+  }
+  #header-ctn #search {
+    margin-left: 180px;
+  }
+  #header-ctn #logo, #header-ctn #search, #header-ctn #cart {
+    display: flex;
+  }
 }/*# sourceMappingURL=style.css.map */
