@@ -42,6 +42,12 @@
         height: 40px;
         
         border: none;
+
+        transition: all 180ms ease-in-out;
+
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 }
 
