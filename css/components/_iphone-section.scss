@@ -35,7 +35,7 @@
 
     height: 300px;
 
-    padding: 8px;
+    padding: 10px 0 0 0;
 
     background-color: var(--solitude-color); 
 
@@ -49,6 +49,8 @@
         height: 40px;
         
         border: none;
+
+        padding: 5px;
 
         transition: all 180ms ease-in-out;
 
