@@ -84,11 +84,15 @@ body {
   height: 50%;
   padding: 10px;
 }
+#bottom-header h2 {
+  font-size: 1rem;
+}
 
 /* _BOTTOM-HEADER-LINKS */
 #bottom-header-links {
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 #bottom-header-links a {
   display: inline-block;
@@ -129,7 +133,7 @@ body {
 #iphone-section {
   display: flex;
   flex-direction: column;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 #iphone-section #text-wrapper {
   display: flex;
@@ -137,9 +141,14 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+#iphone-section #text-wrapper h4 {
+  font-size: 2rem;
+}
 #iphone-section #text-wrapper p {
   text-align: center;
+  margin: 10px;
   padding: 10px;
+  font-weight: 410;
 }
 
 /* SELECT_MODEL_IPHONE */
