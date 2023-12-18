@@ -86,6 +86,7 @@ body {
 }
 #bottom-header h2 {
   font-size: 1rem;
+  color: var(--text-dark);
 }
 
 /* _BOTTOM-HEADER-LINKS */
@@ -101,6 +102,7 @@ body {
   font-size: 0.9rem;
   text-decoration: none;
   transition: all 180ms ease-in-out;
+  color: var(--subtitle-color);
 }
 #bottom-header-links a:hover {
   transform: scale(1.05);
@@ -143,12 +145,14 @@ body {
 }
 #iphone-section #text-wrapper h4 {
   font-size: 2rem;
+  color: var(--text-dark);
 }
 #iphone-section #text-wrapper p {
   text-align: center;
   margin: 10px;
   padding: 10px;
   font-weight: 410;
+  color: var(--subtitle-color);
 }
 
 /* SELECT_MODEL_IPHONE */
@@ -170,6 +174,7 @@ body {
   height: 40px;
   border: none;
   padding: 5px;
+  cursor: pointer;
   transition: all 180ms ease-in-out;
 }
 #select-model-iphone .arrow:hover {
@@ -180,8 +185,10 @@ body {
 ion-icon {
   width: 100%;
   height: 100%;
+  color: var(--subtitle-color);
 }
 
+/* _TABLIST */
 #tablist {
   display: flex;
   align-items: center;
@@ -191,6 +198,80 @@ ion-icon {
 #tablist ul {
   display: flex;
   list-style: none;
+  gap: 10px;
+  margin: 3px;
+}
+#tablist ul button {
+  width: 16px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#tablist ul button ion-icon {
+  width: 16px;
+  height: 16px;
+  color: var(--subtitle-color);
+  opacity: 0.8;
+}
+#tablist ul button .selected {
+  color: var(--text-dark);
+}
+
+/* _SECTION-MODELS */
+#sec-models {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  padding: 35px 50px 0 50px;
+  gap: 10px;
+}
+#sec-models h4 {
+  font-size: 2rem;
+  color: var(--text-dark);
+}
+#sec-models p {
+  font-weight: 410;
+  color: var(--subtitle-color);
+}
+
+/* MODEL-TYPE */
+.model-type {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  padding: 5px 0px 5px 0px;
+  gap: 16px;
+  background-color: var(--solitude-color);
+  border: 1px solid var(--navy-blue-color);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 180ms ease-in-out;
+}
+.model-type:hover {
+  transform: scale(1.05);
+}
+
+/* MODEL-DESCRIPTION */
+.model-desc {
+  display: flex;
+  flex-direction: column;
+}
+.model-desc h1 {
+  font-size: 1rem;
+}
+.model-desc p {
+  font-size: 0.9rem;
+}
+
+/* MODEL-PRICE */
+.model-price {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 10px;
+}
+.model-price p {
+  font-size: 0.8rem;
 }
 
 /* IMPORT _RESPONSIVE.SCSS */
