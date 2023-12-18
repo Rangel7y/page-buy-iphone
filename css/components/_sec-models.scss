@@ -1,0 +1,66 @@
+
+/* _SECTION-MODELS */
+#sec-models{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 35px 50px 0 50px;
+
+    gap: 10px;
+
+    h4{
+        font-size: 2rem;
+
+        color: var(--text-dark);
+    }
+
+    p{
+        font-weight: 410;
+
+        color: var(--subtitle-color);
+    }
+}
+
+/* MODEL-TYPE */
+.model-type{
+    display: flex;
+    justify-content: center;
+
+    height: 50px;
+
+    padding: 5px 0px 5px 0px;
+
+    gap: 16px;
+
+    background-color: var(--solitude-color);
+
+    border: 1px solid var(--navy-blue-color);
+    border-radius: 12px;
+}
+
+/* MODEL-DESCRIPTION */
+.model-desc{
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        font-size: 1rem;
+    }
+
+    p{
+        font-size: 0.9rem;
+    }
+}
+
+/* MODEL-PRICE */
+.model-price{
+    height: fit-content;
+
+    padding-top: 10px;
+
+    p{
+        font-size: 0.8rem;
+    }
+}
