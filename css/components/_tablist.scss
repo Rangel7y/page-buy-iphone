@@ -28,11 +28,11 @@
 
                 color: var(--subtitle-color);
             }
+            
+            .selected{
+                color: var(--text-dark);
+            }
         }
     }
 }
 
-/* SELECTED BUTTON-PICKER */
-.selected{
-    opacity: 1;
-}
