@@ -38,6 +38,14 @@
 
     border: 1px solid var(--navy-blue-color);
     border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: all 180ms ease-in-out;
+
+    &:hover{
+        transform: scale(1.05);
+    }
 }
 
 /* MODEL-DESCRIPTION */
