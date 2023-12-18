@@ -5,6 +5,8 @@
     align-items: center;
     justify-content: center;
 
+    background-color: var(--solitude-color);
+
     ul{
         display: flex;
 
@@ -27,6 +29,8 @@
                 height: 16px;
 
                 color: var(--subtitle-color);
+
+                opacity: 0.8;
             }
             
             .selected{
