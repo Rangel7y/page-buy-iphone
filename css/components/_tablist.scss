@@ -1,1 +1,38 @@
 
+/* _TABLIST */
+#tablist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul{
+        display: flex;
+
+        list-style: none;
+
+        gap: 10px;
+
+        margin: 3px;
+
+        button{
+            width: 16px;
+
+            border: none;
+            border-radius: 50%;
+
+            cursor: pointer;
+
+            ion-icon{
+                width: 16px;
+                height: 16px;
+
+                color: var(--subtitle-color);
+            }
+        }
+    }
+}
+
+/* SELECTED BUTTON-PICKER */
+.selected{
+    opacity: 1;
+}
