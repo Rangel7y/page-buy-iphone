@@ -1,0 +1,17 @@
+
+/* MIXIN _TITLE-DESCRIPTION-STYLE */
+@mixin titleDescSty(){
+    gap: 10px;
+
+    h4{
+        font-size: 2rem;
+
+        color: var(--text-dark);
+    }
+
+    p{
+        font-weight: 410;
+
+        color: var(--subtitle-color);
+    }
+}
