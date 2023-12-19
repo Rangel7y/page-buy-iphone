@@ -156,7 +156,7 @@ body {
 }
 
 /* SELECT_MODEL_IPHONE */
-#select-model-iphone {
+#sec-models-img {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -164,12 +164,7 @@ body {
   padding: 10px 0 0 0;
   background-color: var(--solitude-color);
 }
-#select-model-iphone img {
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 100%;
-}
-#select-model-iphone .arrow {
+#sec-models-img .arrow {
   width: 40px;
   height: 40px;
   border: none;
@@ -177,8 +172,20 @@ body {
   cursor: pointer;
   transition: all 180ms ease-in-out;
 }
-#select-model-iphone .arrow:hover {
+#sec-models-img .arrow:hover {
   transform: scale(1.1);
+}
+
+/* SIZE-IMAGE-PRODUCT */
+#size-img-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 280px;
+}
+#size-img-product img {
+  width: 100%;
+  height: 100%;
 }
 
 /* ARROWS ION-ICON */
