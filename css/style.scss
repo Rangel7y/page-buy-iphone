@@ -2,6 +2,9 @@
 /* IMPORT _VARS.SCSS */
 @use 'components/utils/vars';
 
+/* IMPORT MIXINS */
+@use 'components/mixin/mixins';
+
 /* IMPORT _BODY.SCSS */
 @use 'components/core/body';
 
@@ -14,10 +17,13 @@
 /* IMPORT _iPHONE-SECTION.SCSS */
 @use 'components/iphone-section';
 
+/* IMPORT _TABLIST */
 @use 'components/tablist';
 
+/* IMPORT _SECTION-MODELS */
 @use 'components/sec-models';
 
+/* IMPORT _SECTION-COLORS */
 @use 'components/sec-colors';
 
 /* IMPORT _RESPONSIVE.SCSS */
