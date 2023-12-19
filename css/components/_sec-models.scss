@@ -2,11 +2,8 @@
 /* _SECTION-MODELS */
 #sec-models{
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     flex-direction: column;
-
-    padding: 35px 50px 0 50px;
 
     @include titleDescSty();
 }
