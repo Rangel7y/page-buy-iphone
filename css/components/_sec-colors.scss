@@ -1,0 +1,15 @@
+
+@import '../components/mixins';
+
+/* _SECTION-COLORS */
+#sec-colors{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @include titleDescSty;
+
+    ul{
+        list-style: none;
+    }
+}
