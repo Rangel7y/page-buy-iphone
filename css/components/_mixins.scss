@@ -1,0 +1,20 @@
+
+/* MIXIN _TITLE-DESCRIPTION-STYLE */
+@mixin titleDescSty{
+
+    padding: 35px 50px 0 50px;
+    
+    gap: 10px;
+
+    h4{
+        font-size: 2rem;
+
+        color: var(--text-dark);
+    }
+
+    p{
+        font-weight: 410;
+
+        color: var(--subtitle-color);
+    }
+}
