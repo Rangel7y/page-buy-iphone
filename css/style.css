@@ -12,7 +12,6 @@
   --solitude-color: #f5f5f7;
 }
 
-/* IMPORT MIXINS */
 /* IMPORT _BODY.SCSS */
 /* RESET */
 * {
@@ -221,6 +220,7 @@ ion-icon {
 }
 
 /* IMPORT _SECTION-MODELS */
+/* IMPORT MIXINS */
 /* MIXIN _TITLE-DESCRIPTION-STYLE */
 /* _SECTION-MODELS */
 #sec-models {
@@ -279,6 +279,7 @@ ion-icon {
 }
 
 /* IMPORT _SECTION-COLORS */
+/* IMPORT MIXINS */
 /* MIXIN _TITLE-DESCRIPTION-STYLE */
 /* _SECTION-COLORS */
 #sec-colors {
