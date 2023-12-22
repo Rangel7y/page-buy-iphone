@@ -1,6 +1,6 @@
 
 /* Get Buttons in Tablist Picker */
-const btnTablist = document.querySelectorAll("#tablist ion-icon.btn-picker");
+const btnTablist = document.querySelectorAll("#tablist button.btn-picker");
 
 /* Get Image Product */
 const imgProduct = document.getElementById('img-product');
