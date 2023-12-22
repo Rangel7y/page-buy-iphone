@@ -15,20 +15,28 @@
         gap: 10px;
 
         margin: 3px;
-
-        button{
-
-            width: 16px;
-
-            border: none;
-            border-radius: 50%;
-
-            cursor: pointer;
-            
-            .selected{
-                color: var(--text-dark);
-            }
-        }
     }
 }
 
+/* BUTTON-PICKER */
+.btn-picker{
+
+    width: 16px;
+    height: 16px;
+
+    background-color: var(--subtitle-color); 
+
+    border: 1px solid var(--solitude-color);
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    opacity: 0.5;
+}
+
+.selected{
+    background-color: var(--text-dark); 
+    border: 1px solid var(--text-dark);
+
+    opacity: 0.8;
+}
