@@ -1,11 +1,13 @@
 
+@import '../components/mixins';
+
 /* _SECTION-MODELS */
 #sec-models{
     display: flex;
     justify-content: center;
     flex-direction: column;
 
-    @include titleDescSty();
+    @include titleDescSty;
 }
 
 /* MODEL-TYPE */
