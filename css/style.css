@@ -196,14 +196,16 @@ ion-icon {
 }
 
 /* IMPORT _TABLIST */
+/* IMPORT MIXINS */
+/* MIXIN _TITLE-DESCRIPTION-STYLE */
 /* _TABLIST */
-#tablist {
+#img-picker-order {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--solitude-color);
 }
-#tablist ul {
+#img-picker-order ul {
   display: flex;
   list-style: none;
   gap: 10px;
@@ -211,7 +213,7 @@ ion-icon {
 }
 
 /* BUTTON-PICKER */
-.btn-picker {
+.btn-img-picker {
   width: 16px;
   height: 16px;
   background-color: var(--subtitle-color);
