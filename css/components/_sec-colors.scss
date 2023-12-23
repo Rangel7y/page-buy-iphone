@@ -14,3 +14,28 @@
         list-style: none;
     }
 }
+
+/* _MODEL-COLORS-PICKER */
+#model-colors-picker{
+    height: 50px;
+
+    ul{
+        display: flex;
+        align-items: center;
+
+        gap: 20px;
+
+        height: 100%;
+
+        li{
+            width: 36px;
+            height: 36px;
+        }
+    }
+}
+
+/* INPUT-COLOR-PICKER */
+.inp-color-picker{
+    width: 100%;
+    height: 100%;
+}
