@@ -1,6 +1,6 @@
 
 /* Get Buttons in Tablist Picker */
-const btnTablist = document.querySelectorAll("#tablist button.btn-picker");
+const btnTablist = document.querySelectorAll("#img-picker-order button.btn-img-picker");
 
 /* Get Image Product */
 const imgProduct = document.getElementById('img-product');
