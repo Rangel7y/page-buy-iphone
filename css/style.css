@@ -311,6 +311,27 @@ ion-icon {
   list-style: none;
 }
 
+/* _MODEL-COLORS-PICKER */
+#model-colors-picker {
+  height: 50px;
+}
+#model-colors-picker ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+}
+#model-colors-picker ul li {
+  width: 36px;
+  height: 36px;
+}
+
+/* INPUT-COLOR-PICKER */
+.inp-color-picker {
+  width: 100%;
+  height: 100%;
+}
+
 /* IMPORT _RESPONSIVE.SCSS */
 /* Mobile */
 @media (max-width: 400px) {
