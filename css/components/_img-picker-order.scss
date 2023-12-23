@@ -1,0 +1,38 @@
+
+/* IMPORT MIXINS */
+@import '../components/mixins';
+
+/* _TABLIST */
+#img-picker-order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--solitude-color);
+
+    ul{
+        display: flex;
+
+        list-style: none;
+
+        gap: 10px;
+
+        margin: 3px;
+    }
+}
+
+/* BUTTON-PICKER */
+.btn-img-picker{
+
+    width: 16px;
+    height: 16px;
+
+    @include btnBorderSty;
+}
+
+.selected{
+    background-color: var(--text-dark); 
+    border: 1px solid var(--text-dark);
+
+    opacity: 0.8;
+}
