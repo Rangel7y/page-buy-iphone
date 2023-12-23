@@ -18,3 +18,14 @@
         color: var(--subtitle-color);
     }
 }
+
+@mixin btnImgPickerSty{
+    background-color: var(--subtitle-color); 
+
+    border: 1px solid var(--solitude-color);
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    opacity: 0.5;
+}
