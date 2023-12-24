@@ -393,8 +393,7 @@ ion-icon {
 }
 
 .inp-color-picker:checked + label {
-  background-color: #ccc;
-  color: #fff;
+  box-shadow: 0px -2px 5px var(--action-color);
   animation: animShake 1.5s infinite ease-in-out;
 }
 @keyframes animShake {
