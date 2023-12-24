@@ -10,6 +10,10 @@ btnTablist.forEach((btn) => {
         btnTablist.forEach((btn) => btn.classList.remove("selected"));
         btn.classList.add("selected");
 
+        /* imgProduct.classList.remove("changing"); */
+
+        imgProduct.classList.toggle("changing");
+
         switch(e.target.getAttribute("id")){
             case 'index-0':
                 imgProduct.src = "./assets/all_models1.png";
@@ -29,6 +33,9 @@ btnTablist.forEach((btn) => {
             default:
                 break;
         }
-        
+
+        setTimeout(() => {
+            imgProduct.classList.toggle("changing");
+        }, 1000);
     });
 });
