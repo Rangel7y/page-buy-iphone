@@ -68,9 +68,24 @@
     justify-content: center;
 
     height: 280px;
+}
 
-    img{
-        width: 100%;
-        height: 100%;
+#img-product{
+    width: 100%;
+    height: 100%;
+
+    transition: 0.5s;
+}
+
+.changing{
+    animation: imgProductFade 1s ease-in;
+}
+
+@keyframes imgProductFade{
+    0%{
+        opacity: 0.1;
+    }
+    50%{
+        opacity: 1;
     }
 }
