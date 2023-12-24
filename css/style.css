@@ -340,6 +340,7 @@ ion-icon {
   display: flex;
   align-items: center;
   gap: 20px;
+  background-color: var(--solitude-color);
 }
 #model-colors-picker ul li {
   display: flex;
