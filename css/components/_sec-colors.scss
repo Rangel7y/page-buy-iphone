@@ -25,17 +25,68 @@
 
         gap: 20px;
 
-        height: 100%;
-
         li{
-            width: 36px;
-            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 30px;
+            height: 30px;
         }
     }
 }
 
 /* INPUT-COLOR-PICKER */
 .inp-color-picker{
+    display: none;
+
     width: 100%;
     height: 100%;
+}
+
+/* INPUT-COLOR-PICKER + LABEL-COLOR */
+.inp-color-picker + label{
+    display: inline-block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+    
+    padding: 10px;
+    
+    cursor: pointer;
+
+    box-shadow: 0 0 0 1px #ccc;
+
+    transition: 200ms ease-in-out;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+/* INPUT-COLOR-PICKED + LABEL (BLACK-COLOR) */
+.inp-color-picker + label[for = "black-color"]{
+    background-color: #3D3D3D;
+}
+/* INPUT-COLOR-PICKED + LABEL (WHITE-COLOR) */
+.inp-color-picker + label[for = "white-color"]{
+    background-color: #D6D5D0;
+}
+/* INPUT-COLOR-PICKED + LABEL (BLUE-COLOR) */
+.inp-color-picker + label[for = "blue-color"]{
+    background-color: #263448;
+}
+/* INPUT-COLOR-PICKED + LABEL (GRAY-COLOR) */
+.inp-color-picker + label[for = "gray-color"]{
+    background-color: #A39F94;
+}
+
+.inp-color-picker:checked + label {
+    
+    background-color: #ccc; 
+    color: #fff; 
+    
+    @include animObjShake;
 }
