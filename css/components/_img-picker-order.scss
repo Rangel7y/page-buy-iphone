@@ -28,6 +28,8 @@
     height: 16px;
 
     @include btnImgPickerSty;
+
+    transition: background 300ms ease-in-out;
 }
 
 .selected{
@@ -35,4 +37,12 @@
     border: 1px solid var(--text-dark);
 
     opacity: 0.8;
+
+    animation: btnImgPickerShake 1.5s infinite ease-in-out;
+}
+
+@keyframes btnImgPickerShake{
+    50%{
+        transform: translateY(-10%);
+    }
 }
