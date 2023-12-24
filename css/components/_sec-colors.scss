@@ -9,15 +9,11 @@
     flex-direction: column;
 
     @include titleDescSty;
-
-    ul{
-        list-style: none;
-    }
 }
 
 /* _MODEL-COLORS-PICKER */
 #model-colors-picker{
-    height: 50px;
+    height: fit-content;
 
     ul{
         display: flex;
@@ -26,6 +22,8 @@
         gap: 20px;
 
         background-color: var(--solitude-color);
+
+        list-style: none;
 
         li{
             display: flex;
