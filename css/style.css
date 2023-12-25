@@ -420,6 +420,7 @@ ion-icon {
 /* UL-LIST-SPECS */
 #ul-list-specs {
   list-style: none;
+  gap: 10px;
 }
 #ul-list-specs li {
   border: 1px solid black;
