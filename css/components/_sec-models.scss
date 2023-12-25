@@ -8,7 +8,21 @@
     justify-content: center;
     flex-direction: column;
 
-    @include titleDescSty;
+    /* Set styles padding in Box */
+    @include stylePaddingBox(10px);
+
+    ul{
+        display: flex;
+        flex-direction: column;
+    
+        gap: 10px;
+    }
+}
+
+/* TITLE-DESCRIPTION-MODEL */
+#title-desc-model{
+    /* Set styles in Title and Description */
+    @include styleTitleDesc;
 }
 
 /* MODEL-TYPE */
