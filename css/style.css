@@ -140,7 +140,7 @@ ion-icon {
 #iphone-section {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 32px;
 }
 #iphone-section #text-wrapper {
   display: flex;
@@ -326,19 +326,18 @@ ion-icon {
   font-weight: 410;
   color: var(--subtitle-color);
 }
-#sec-colors ul {
-  list-style: none;
-}
 
 /* _MODEL-COLORS-PICKER */
 #model-colors-picker {
-  height: 50px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 #model-colors-picker ul {
   display: flex;
   align-items: center;
   gap: 20px;
   background-color: var(--solitude-color);
+  list-style: none;
 }
 #model-colors-picker ul li {
   display: flex;
@@ -398,6 +397,32 @@ ion-icon {
   50% {
     transform: translateY(-10%);
   }
+}
+
+/* IMPORT _SECTION-SPECS */
+/* MIXIN _TITLE-DESCRIPTION-STYLE */
+/* _SECTION-SPECS */
+#sec-specs {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 50px 0 50px;
+  gap: 10px;
+}
+#sec-specs h4 {
+  font-size: 2rem;
+  color: var(--text-dark);
+}
+#sec-specs p {
+  font-weight: 410;
+  color: var(--subtitle-color);
+}
+
+/* UL-LIST-SPECS */
+#ul-list-specs {
+  list-style: none;
+}
+#ul-list-specs li {
+  border: 1px solid black;
 }
 
 /* IMPORT _RESPONSIVE.SCSS */
