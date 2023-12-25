@@ -400,16 +400,14 @@ ion-icon {
 }
 
 /* IMPORT _SECTION-SPECS */
-/* MIXIN _TITLE-DESCRIPTION-STYLE */
 /* _SECTION-SPECS */
 #sec-specs {
   display: flex;
   flex-direction: column;
-  padding: 35px 50px 0 50px;
-  gap: 10px;
+  padding: 50px 50px 0 50px;
+  text-align: center;
 }
-#sec-specs h4 {
-  font-size: 2rem;
+#sec-specs h2, #sec-specs h3, #sec-specs h5, #sec-specs h1 {
   color: var(--text-dark);
 }
 #sec-specs p {
@@ -419,11 +417,18 @@ ion-icon {
 
 /* UL-LIST-SPECS */
 #ul-list-specs {
+  display: flex;
+  flex-direction: column;
   list-style: none;
-  gap: 10px;
+  gap: 30px;
+  padding-top: 10px;
 }
 #ul-list-specs li {
-  border: 1px solid black;
+  margin: 10px;
+}
+
+#ul-list-specs:last-child {
+  padding-bottom: 20px;
 }
 
 /* IMPORT _RESPONSIVE.SCSS */
