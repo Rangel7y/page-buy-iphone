@@ -1,11 +1,13 @@
 
-/* MIXIN _TITLE-DESCRIPTION-STYLE */
-@mixin titleDescSty{
-
+/* MIXIN _PADDING-CONTENT-BOX */
+@mixin stylePaddingBox($gapvalue){
     padding: 35px 50px 0 50px;
     
-    gap: 10px;
+    gap: $gapvalue;
+}
 
+/* MIXIN _TITLE-DESCRIPTIONS (STYLES) */
+@mixin styleTitleDesc{
     h4{
         font-size: 2rem;
 
@@ -19,6 +21,7 @@
     }
 }
 
+/* MIXIN _BUTTON-IMAGE-PICKER (STYLES) */
 @mixin btnImgPickerSty{
     background-color: var(--subtitle-color); 
 
@@ -30,6 +33,7 @@
     opacity: 0.5;
 }
 
+/* MIXIN _ANIMATIONO-OBJECT-SHAKE (STYLES) */
 @mixin animObjShake{
 
     animation: animShake 1.5s infinite ease-in-out;
