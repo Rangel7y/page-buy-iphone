@@ -1,21 +1,40 @@
 
-@import '../components/mixins';
-
 /* _SECTION-SPECS */
 #sec-specs{
     display: flex;
     flex-direction: column;
 
-    @include titleDescSty;
+    padding: 50px 50px 0 50px;
+
+    text-align: center;
+
+    h2, h3, h5, h1{
+        color: var(--text-dark);
+    }
+
+    p{
+        font-weight: 410;
+
+        color: var(--subtitle-color);
+    }
 }
 
 /* UL-LIST-SPECS */
 #ul-list-specs{
+    display: flex;
+    flex-direction: column;
+
     list-style: none;
 
-    gap: 10px;
+    gap: 30px;
+
+    padding-top: 10px;
 
     li{
-        border: 1px solid black;
+        margin: 10px;
     }
+}
+
+#ul-list-specs:last-child{
+    padding-bottom: 20px;
 }
