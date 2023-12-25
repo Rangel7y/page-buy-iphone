@@ -8,7 +8,11 @@
     justify-content: center;
     flex-direction: column;
 
-    @include titleDescSty;
+    /* Set styles padding in Box */
+    @include stylePaddingBox(10px);
+
+    /* Set styles in Title and Description */
+    @include styleTitleDesc;
 }
 
 /* _MODEL-COLORS-PICKER */
