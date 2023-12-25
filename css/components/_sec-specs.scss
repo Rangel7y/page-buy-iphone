@@ -1,0 +1,21 @@
+
+@import '../components/mixins';
+
+/* _SECTION-SPECS */
+#sec-specs{
+    display: flex;
+    flex-direction: column;
+
+    @include titleDescSty;
+}
+
+/* UL-LIST-SPECS */
+#ul-list-specs{
+    list-style: none;
+
+    gap: 10px;
+
+    li{
+        border: 1px solid black;
+    }
+}
