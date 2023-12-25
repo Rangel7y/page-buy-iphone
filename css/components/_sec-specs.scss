@@ -20,7 +20,7 @@
 }
 
 /* UL-LIST-SPECS */
-#ul-list-specs{
+#ul-specs-list{
     display: flex;
     flex-direction: column;
 
@@ -35,6 +35,6 @@
     }
 }
 
-#ul-list-specs:last-child{
+#ul-specs-list:last-child{
     padding-bottom: 20px;
 }
