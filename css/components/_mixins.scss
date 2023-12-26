@@ -21,14 +21,3 @@
     }
 }
 
-/* MIXIN _ANIMATIONO-OBJECT-SHAKE (STYLES) */
-@mixin animObjShake($valueY, $animSpeed){
-
-    @keyframes animShake{
-        50%{
-            transform: translateY($valueY);
-        }
-    }
-
-    animation: animShake $animSpeed infinite ease-in-out;
-}

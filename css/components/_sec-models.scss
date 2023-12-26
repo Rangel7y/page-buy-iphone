@@ -23,6 +23,10 @@
 
 /* TITLE-DESCRIPTION-MODEL */
 #title-desc-model{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
     /* Set styles in Title and Description */
     @include styleTitleDesc;
 }
@@ -63,8 +67,6 @@
 /* INPUT-MODEL-PICKER (CHECKED) AND LABEL */
 .inp-model-picker:checked + label{
     box-shadow: 0px -1px 5px var(--action-color);
-    
-    @include animObjShake(-2%, 1.5s);
 }
 
 /* MODEL-DESCRIPTION */
