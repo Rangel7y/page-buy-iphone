@@ -76,10 +76,15 @@
 
     h1{
         font-size: 1rem;
+        color: var(--text-dark);
     }
 
     p{
         font-size: 0.9rem;
+
+        color: var(--subtitle-color);
+
+        font-weight: 410;
     }
 }
 
@@ -91,5 +96,9 @@
 
     p{
         font-size: 0.8rem;
+
+        color: var(--subtitle-color);
+
+        font-weight: 410;
     }
 }
