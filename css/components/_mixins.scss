@@ -21,26 +21,14 @@
     }
 }
 
-/* MIXIN _BUTTON-IMAGE-PICKER (STYLES) */
-@mixin btnImgPickerSty{
-    background-color: var(--subtitle-color); 
-
-    border: 1px solid var(--solitude-color);
-    border-radius: 50%;
-
-    cursor: pointer;
-
-    opacity: 0.5;
-}
-
 /* MIXIN _ANIMATIONO-OBJECT-SHAKE (STYLES) */
-@mixin animObjShake{
+@mixin animObjShake($valueY, $animSpeed){
 
-    animation: animShake 1.5s infinite ease-in-out;
+    animation: animShake $animSpeed infinite ease-in-out;
 
     @keyframes animShake{
         50%{
-            transform: translateY(-10%);
+            transform: translateY($valueY);
         }
     }
 }
