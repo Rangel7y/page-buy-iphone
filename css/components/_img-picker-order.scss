@@ -27,9 +27,16 @@
     width: 16px;
     height: 16px;
 
-    @include btnImgPickerSty;
+    background-color: var(--subtitle-color); 
 
-    transition: 300ms ease-in-out;
+    border: 1px solid var(--solitude-color);
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    opacity: 0.5;
+
+    transition: 200ms ease-in-out;
 }
 
 .selected{
@@ -38,5 +45,5 @@
 
     opacity: 0.8;
 
-    @include animObjShake;
+    @include animObjShake(-10%, 1.3s);
 }
