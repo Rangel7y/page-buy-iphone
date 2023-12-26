@@ -209,7 +209,8 @@ ion-icon {
 }
 /* IMPORT _TABLIST */
 /* IMPORT MIXINS */
-/* MIXIN _TITLE-DESCRIPTION-STYLE */
+/* MIXIN _PADDING-CONTENT-BOX */
+/* MIXIN _TITLE-DESCRIPTIONS (STYLES) */
 /* _TABLIST */
 #img-picker-order {
   display: flex;
@@ -233,56 +234,78 @@ ion-icon {
   border-radius: 50%;
   cursor: pointer;
   opacity: 0.5;
-  transition: 300ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 
 .selected {
   background-color: var(--text-dark);
   border: 1px solid var(--text-dark);
   opacity: 0.8;
-  animation: animShake 1.5s infinite ease-in-out;
-}
-@keyframes animShake {
-  50% {
-    transform: translateY(-10%);
-  }
 }
 
 /* IMPORT _SECTION-MODELS */
 /* IMPORT MIXINS */
-/* MIXIN _TITLE-DESCRIPTION-STYLE */
+/* MIXIN _PADDING-CONTENT-BOX */
+/* MIXIN _TITLE-DESCRIPTIONS (STYLES) */
 /* _SECTION-MODELS */
 #sec-models {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  /* Set styles padding in Box */
   padding: 35px 50px 0 50px;
   gap: 10px;
 }
-#sec-models h4 {
+#sec-models ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+/* TITLE-DESCRIPTION-MODEL */
+#title-desc-model {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* Set styles in Title and Description */
+}
+#title-desc-model h4 {
   font-size: 2rem;
   color: var(--text-dark);
 }
-#sec-models p {
+#title-desc-model p {
   font-weight: 410;
   color: var(--subtitle-color);
 }
 
-/* MODEL-TYPE */
-.model-type {
+/* INPUT-MODEL-PICKER */
+.inp-model-picker {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* INPUT-MODEL-PICKER AND LABEL */
+.inp-model-picker + label {
   display: flex;
-  justify-content: center;
-  height: 50px;
-  padding: 5px 0px 5px 0px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
   gap: 16px;
   background-color: var(--solitude-color);
-  border: 1px solid var(--navy-blue-color);
+  border: 1px solid var(--subtitle-color);
   border-radius: 12px;
   cursor: pointer;
-  transition: all 180ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
-.model-type:hover {
-  transform: scale(1.05);
+.inp-model-picker + label:hover {
+  transform: scale(1.01);
+}
+
+/* INPUT-MODEL-PICKER (CHECKED) AND LABEL */
+.inp-model-picker:checked + label {
+  box-shadow: 0px -1px 5px var(--action-color);
 }
 
 /* MODEL-DESCRIPTION */
@@ -309,14 +332,17 @@ ion-icon {
 
 /* IMPORT _SECTION-COLORS */
 /* IMPORT MIXINS */
-/* MIXIN _TITLE-DESCRIPTION-STYLE */
+/* MIXIN _PADDING-CONTENT-BOX */
+/* MIXIN _TITLE-DESCRIPTIONS (STYLES) */
 /* _SECTION-COLORS */
 #sec-colors {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  /* Set styles padding in Box */
   padding: 35px 50px 0 50px;
   gap: 10px;
+  /* Set styles in Title and Description */
 }
 #sec-colors h4 {
   font-size: 2rem;
@@ -389,14 +415,9 @@ ion-icon {
   background-color: #A39F94;
 }
 
+/* INPUT-COLOR-PICKER (CHECKED) + LABEL */
 .inp-color-picker:checked + label {
-  box-shadow: 0px -2px 5px var(--action-color);
-  animation: animShake 1.5s infinite ease-in-out;
-}
-@keyframes animShake {
-  50% {
-    transform: translateY(-10%);
-  }
+  box-shadow: 0px -1px 5px var(--action-color);
 }
 
 /* IMPORT _SECTION-SPECS */
@@ -416,18 +437,18 @@ ion-icon {
 }
 
 /* UL-LIST-SPECS */
-#ul-list-specs {
+#ul-specs-list {
   display: flex;
   flex-direction: column;
   list-style: none;
   gap: 30px;
   padding-top: 10px;
 }
-#ul-list-specs li {
+#ul-specs-list li {
   margin: 10px;
 }
 
-#ul-list-specs:last-child {
+#ul-specs-list:last-child {
   padding-bottom: 20px;
 }
 
