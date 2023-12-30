@@ -1,0 +1,58 @@
+
+/* SELECT_MODEL_IPHONE */
+#sec-product-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 300px;
+
+    padding: 10px 0 0 0;
+
+    background-color: var(--solitude-color); 
+
+    .arrow{
+        width: 40px;
+        height: 40px;
+        
+        border: none;
+
+        padding: 5px;
+
+        cursor: pointer;
+
+        transition: all 180ms ease-in-out;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+/* SIZE-IMAGE-PRODUCT */
+#size-img-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 280px;
+}
+
+#img-product{
+    height: 100%;
+
+    transition: 0.5s;
+}
+
+.changing{
+    animation: imgProductFade 1s ease-in;
+}
+
+@keyframes imgProductFade{
+    0%{
+        opacity: 0.1;
+    }
+    50%{
+        opacity: 1;
+    }
+}
