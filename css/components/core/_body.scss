@@ -8,6 +8,10 @@
     font-family: 'Roboto';
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* _BODY */
 body{
     min-height: 100vh;
