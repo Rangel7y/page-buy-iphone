@@ -14,16 +14,19 @@
 /* IMPORT _iPHONE-SECTION.SCSS */
 @use 'components/iphone-section';
 
+/* IMPORT _SEC-PRODUCT-IMG.SCSS */
+@use 'components/sec-product-img';
+
 /* IMPORT _TABLIST */
 @use 'components/img-picker-order';
 
-/* IMPORT _SECTION-MODELS */
+/* IMPORT _SECTION-MODELS.SCSS */
 @use 'components/sec-models';
 
-/* IMPORT _SECTION-COLORS */
+/* IMPORT _SECTION-COLORS.SCSS */
 @use 'components/sec-colors';
 
-/* IMPORT _SECTION-SPECS */
+/* IMPORT _SECTION-SPECS.SCSS */
 @use 'components/sec-specs';
 
 /* IMPORT _RESPONSIVE.SCSS */
