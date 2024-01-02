@@ -21,9 +21,8 @@
   font-family: "Roboto";
 }
 
-/* _BODY */
-body {
-  min-height: 100vh;
+html {
+  scroll-behavior: smooth;
 }
 
 /* IMPORT _HEADER.SCSS */
@@ -33,44 +32,75 @@ body {
   align-items: center;
   flex-direction: column;
   top: 0;
-  width: 100%;
-  height: 100px;
-  opacity: 0.9;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-#header-ctn nav {
+
+/* HEADER - NAV */
+#header-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
-  height: 50%;
-  background-color: var(--bg-primary);
+  height: 45px;
+  background-color: var(--text-dark);
 }
-#header-ctn nav ul {
-  display: flex;
+#header-nav ul {
+  display: none;
   align-items: center;
   justify-content: center;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-  margin: 0 auto;
-  padding: 0 2rem;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.75rem;
   list-style: none;
 }
-#header-ctn nav ul li {
+#header-nav ul li {
   min-width: -moz-fit-content;
   min-width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
   font-size: small;
-  padding: 0 0.75rem;
   transition: all 180ms ease-in-out;
 }
-#header-ctn nav ul li:hover {
+#header-nav ul li a {
+  text-decoration: none;
+  color: var(--text-light);
+}
+#header-nav ul li:hover {
   transform: scale(1.1);
 }
-#header-ctn nav ul li a {
-  color: var(--text-light);
-  text-decoration: none;
+#header-nav .hide-icon {
+  display: none;
+}
+#header-nav .open-menu {
+  display: flex;
+  gap: 0.45rem;
+}
+#header-nav .open-menu li {
+  margin: 0.55rem auto;
+}
+
+/*  */
+#hide-menu-links {
+  border: none;
+  background: none;
+}
+
+/* HEADER - MENU*/
+#header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+#header-menu #logo, #header-menu #search, #header-menu #cart, #header-menu #show-menu-links {
+  display: block;
+}
+#header-menu #logo span {
+  margin: 55px;
+}
+#header-menu button {
+  border: none;
+  background: none;
 }
 
 /* _BOTTOM-HEADER */
@@ -80,10 +110,11 @@ body {
   justify-content: space-between;
   width: 100%;
   height: 50%;
-  padding: 10px;
+  padding: 0.75rem;
+  gap: 8px;
 }
 #bottom-header h2 {
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: var(--text-dark);
 }
 
@@ -91,11 +122,10 @@ body {
 #bottom-header-links {
   display: flex;
   align-items: center;
-  gap: 5px;
+  justify-content: center;
+  gap: 10px;
 }
 #bottom-header-links a {
-  display: inline-block;
-  margin-right: 5px;
   color: var(--text-dark);
   font-size: 0.9rem;
   text-decoration: none;
@@ -103,10 +133,11 @@ body {
   color: var(--subtitle-color);
 }
 #bottom-header-links a:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   text-decoration: underline;
 }
-#bottom-header-links button {
+
+#btn-buy-product {
   width: 80px;
   height: 25px;
   border: none;
@@ -114,9 +145,10 @@ body {
   background-color: var(--navy-blue-color);
   color: var(--text-light);
   transition: all 180ms ease-in-out;
+  cursor: pointer;
 }
-#bottom-header-links button:hover {
-  transform: scale(1.1);
+#btn-buy-product:hover {
+  transform: scale(1.03);
 }
 
 /* IMPORT _MAIN.SCSS */
@@ -140,7 +172,7 @@ ion-icon {
 #iphone-section {
   display: flex;
   flex-direction: column;
-  margin-top: 32px;
+  margin-top: 22px;
 }
 #iphone-section #text-wrapper {
   display: flex;
@@ -149,19 +181,21 @@ ion-icon {
   flex-direction: column;
 }
 #iphone-section #text-wrapper h4 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: var(--text-dark);
 }
 #iphone-section #text-wrapper p {
+  width: 286px;
   text-align: center;
-  margin: 10px;
-  padding: 10px;
+  margin: 0 20px 0;
+  padding: 2% 0;
   font-weight: 410;
   color: var(--subtitle-color);
 }
 
+/* IMPORT _SEC-PRODUCT-IMG.SCSS */
 /* SELECT_MODEL_IPHONE */
-#sec-models-img {
+#sec-product-img {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -169,15 +203,15 @@ ion-icon {
   padding: 10px 0 0 0;
   background-color: var(--solitude-color);
 }
-#sec-models-img .arrow {
-  width: 40px;
-  height: 40px;
+#sec-product-img .arrow {
+  width: 25px;
+  height: 25px;
   border: none;
   padding: 5px;
   cursor: pointer;
   transition: all 180ms ease-in-out;
 }
-#sec-models-img .arrow:hover {
+#sec-product-img .arrow:hover {
   transform: scale(1.1);
 }
 
@@ -190,8 +224,7 @@ ion-icon {
 }
 
 #img-product {
-  width: 100%;
-  height: 100%;
+  height: 75%;
   transition: 0.5s;
 }
 
@@ -243,7 +276,7 @@ ion-icon {
   opacity: 0.8;
 }
 
-/* IMPORT _SECTION-MODELS */
+/* IMPORT _SECTION-MODELS.SCSS */
 /* IMPORT MIXINS */
 /* MIXIN _PADDING-CONTENT-BOX */
 /* MIXIN _TITLE-DESCRIPTIONS (STYLES) */
@@ -261,6 +294,9 @@ ion-icon {
   flex-direction: column;
   gap: 10px;
   list-style: none;
+}
+#sec-models ul li {
+  width: 314px;
 }
 
 /* TITLE-DESCRIPTION-MODEL */
@@ -315,9 +351,12 @@ ion-icon {
 }
 .model-desc h1 {
   font-size: 1rem;
+  color: var(--text-dark);
 }
 .model-desc p {
   font-size: 0.9rem;
+  color: var(--subtitle-color);
+  font-weight: 410;
 }
 
 /* MODEL-PRICE */
@@ -328,9 +367,11 @@ ion-icon {
 }
 .model-price p {
   font-size: 0.8rem;
+  color: var(--subtitle-color);
+  font-weight: 410;
 }
 
-/* IMPORT _SECTION-COLORS */
+/* IMPORT _SECTION-COLORS.SCSS */
 /* IMPORT MIXINS */
 /* MIXIN _PADDING-CONTENT-BOX */
 /* MIXIN _TITLE-DESCRIPTIONS (STYLES) */
@@ -362,7 +403,6 @@ ion-icon {
   display: flex;
   align-items: center;
   gap: 20px;
-  background-color: var(--solitude-color);
   list-style: none;
 }
 #model-colors-picker ul li {
@@ -420,12 +460,12 @@ ion-icon {
   box-shadow: 0px -1px 5px var(--action-color);
 }
 
-/* IMPORT _SECTION-SPECS */
+/* IMPORT _SECTION-SPECS.SCSS */
 /* _SECTION-SPECS */
 #sec-specs {
   display: flex;
   flex-direction: column;
-  padding: 50px 50px 0 50px;
+  padding: 70px 50px 0 50px;
   text-align: center;
 }
 #sec-specs h2, #sec-specs h3, #sec-specs h5, #sec-specs h1 {
@@ -453,15 +493,14 @@ ion-icon {
 }
 
 /* IMPORT _RESPONSIVE.SCSS */
-/* Mobile */
-@media (max-width: 400px) {
-  #header-ctn nav ul li {
-    display: none;
-  }
-  #header-ctn #search {
-    margin-left: 180px;
-  }
-  #header-ctn #logo, #header-ctn #search, #header-ctn #cart {
-    display: flex;
-  }
-}/*# sourceMappingURL=style.css.map */
+/* Mobile (400px) and Tablet (600px) */
+/* @media screen and (min-width: 320px) and (max-width: 480px){
+
+} */
+/* @media (max-width: 600px){
+    #header-ctn{
+        #search{
+            margin-left: 180px;
+        }
+    }
+} *//*# sourceMappingURL=style.css.map */
