@@ -14,9 +14,17 @@
 </head>
 <body>
     <header id="header-ctn">
-        <nav>
-            <ul>
-                <li id="logo"><a href="#"><img src="./assets/logo_apple.svg" alt="Logo da Apple"></a></li>
+        <nav id="header-nav">
+            <div id="header-menu">
+                <a id="logo" href="#">
+                    <img src="./assets/logo_apple.svg" alt="Logo da Apple">
+                    <span></span>
+                </a>
+                <button id="cart"><img src="./assets/cart-icon.svg" alt="Ícone de carrinho de compras"></button>
+                <button id="show-menu-links" style="width: fit-content; height: 24px;"><img src="./assets/menu_white_36dp.svg" alt="Ícone do menu header" style="width: 24px;"></button>
+            </div>
+            
+            <ul id="header-links">
                 <li><a href="#">Loja</a></li>
                 <li><a href="#">Mac</a></li>
                 <li><a href="#">iPad</a></li>
@@ -28,8 +36,7 @@
                 <li><a href="#">Entretenimento</a></li>
                 <li><a href="#">Acessórios</a></li>
                 <li><a href="#">Suporte</a></li>
-                <li id="search"><a href="#"><img src="./assets/search-icon.svg" alt="Icone de busca"></a></li>
-                <li id="cart"><a href="#"><img src="./assets/cart-icon.svg" alt="Icone de carrinho de compras"></a></li>
+                <li><button id="hide-menu-links" style="width: 24px;"><img src="./assets/close_white_36dp.svg" alt="Ícone para ocultar o menu header" style="width: 24px;"></button></li>       
             </ul>
         </nav>
 
@@ -38,7 +45,7 @@
 
             <div id="bottom-header-links">
                 <a href="#sec-specs">Especificações</a>
-                <button>Comprar</button>
+                <button id="btn-buy-product">Comprar</button>
             </div>
         </div>
     </header>
@@ -50,7 +57,7 @@
                 <p>O iPhone 15 Pro é uma enorme evolução. Ele traz uma rapidez absurda a tudo o que você faz e vem com novos recursos espetaculares para fotos e vídeos. Tudo em dois tamanhos.</p>
             </div>
 
-            <section id="sec-models-img">
+            <section id="sec-product-img">
                 <button class="previous-arrow arrow" onclick="PreviousArrow()"><ion-icon name="arrow-back-circle-sharp"></ion-icon></button>
                 <div id="size-img-product">
                     <img id="img-product" src="./assets/all_models1.png" alt="Imagem dos modelos de iPhone">
