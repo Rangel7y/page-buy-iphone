@@ -8,6 +8,8 @@
     justify-content: center;
     flex-direction: column;
 
+    width: 100%;
+
     /* Set styles padding in Box */
     @include stylePaddingBox(10px);
 
@@ -20,7 +22,8 @@
         list-style: none;
 
         li{
-            width: 314px;
+            width: fit-content;
+            height: 70px;
         }
     }
 }
@@ -79,7 +82,7 @@
     flex-direction: column;
 
     h1{
-        font-size: 1rem;
+        font-size: 0.85rem;
         color: var(--text-dark);
     }
 
