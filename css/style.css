@@ -89,14 +89,22 @@ html {
 #header-menu {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
   gap: 2rem;
 }
 #header-menu #logo, #header-menu #search, #header-menu #cart, #header-menu #show-menu-links {
   display: block;
+  margin: auto 20px;
 }
-#header-menu #logo span {
-  margin: 55px;
+#header-menu #logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#header-menu #header-menu-btn {
+  display: flex;
 }
 #header-menu button {
   border: none;
@@ -171,7 +179,9 @@ ion-icon {
 /* _iPHONE-SECTION */
 #iphone-section {
   display: flex;
+  align-items: center;
   flex-direction: column;
+  width: 100%;
   margin-top: 22px;
 }
 #iphone-section #text-wrapper {
@@ -185,7 +195,6 @@ ion-icon {
   color: var(--text-dark);
 }
 #iphone-section #text-wrapper p {
-  width: 286px;
   text-align: center;
   margin: 0 20px 0;
   padding: 2% 0;
@@ -199,13 +208,14 @@ ion-icon {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 300px;
-  padding: 10px 0 0 0;
+  width: 100%;
+  height: 290px;
+  margin-top: 5px;
   background-color: var(--solitude-color);
 }
 #sec-product-img .arrow {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   border: none;
   padding: 5px;
   cursor: pointer;
@@ -220,11 +230,14 @@ ion-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 280px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
 }
 
 #img-product {
-  height: 75%;
+  width: 100%;
+  height: 85%;
   transition: 0.5s;
 }
 
@@ -249,6 +262,7 @@ ion-icon {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   background-color: var(--solitude-color);
 }
 #img-picker-order ul {
@@ -260,8 +274,8 @@ ion-icon {
 
 /* BUTTON-PICKER */
 .btn-img-picker {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   background-color: var(--subtitle-color);
   border: 1px solid var(--solitude-color);
   border-radius: 50%;
@@ -285,8 +299,9 @@ ion-icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
   /* Set styles padding in Box */
-  padding: 35px 50px 0 50px;
+  padding: 35px 30px 0 30px;
   gap: 10px;
 }
 #sec-models ul {
@@ -296,7 +311,9 @@ ion-icon {
   list-style: none;
 }
 #sec-models ul li {
-  width: 314px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 70px;
 }
 
 /* TITLE-DESCRIPTION-MODEL */
@@ -350,7 +367,7 @@ ion-icon {
   flex-direction: column;
 }
 .model-desc h1 {
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: var(--text-dark);
 }
 .model-desc p {
@@ -380,8 +397,9 @@ ion-icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
   /* Set styles padding in Box */
-  padding: 35px 50px 0 50px;
+  padding: 35px 30px 0 30px;
   gap: 10px;
   /* Set styles in Title and Description */
 }
@@ -465,7 +483,7 @@ ion-icon {
 #sec-specs {
   display: flex;
   flex-direction: column;
-  padding: 70px 50px 0 50px;
+  padding: 70px 30px 0 30px;
   text-align: center;
 }
 #sec-specs h2, #sec-specs h3, #sec-specs h5, #sec-specs h1 {
@@ -493,14 +511,56 @@ ion-icon {
 }
 
 /* IMPORT _RESPONSIVE.SCSS */
-/* Mobile (400px) and Tablet (600px) */
-/* @media screen and (min-width: 320px) and (max-width: 480px){
-
-} */
-/* @media (max-width: 600px){
-    #header-ctn{
-        #search{
-            margin-left: 180px;
+/*  */
+/* @media screen and (min-width: 480px){
+    #header-menu{
+        #logo{
+            span{
+                margin: 140px;
+            }
         }
     }
-} *//*# sourceMappingURL=style.css.map */
+} */
+@media screen and (min-width: 600px) {
+  #header-menu #logo span {
+    margin: 200px;
+  }
+  #iphone-section #text-wrapper p {
+    margin: 0 35px 0;
+  }
+}
+@media screen and (min-width: 801px) {
+  #header-menu #logo span {
+    margin: 285px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  #header-menu {
+    width: 100%;
+  }
+  #header-menu #logo {
+    margin-left: 35px;
+  }
+  #header-menu #cart {
+    margin-right: 35px;
+  }
+  #header-menu #show-menu-links {
+    display: none;
+  }
+  #header-nav ul {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+  }
+  #header-nav ul li:last-child {
+    display: none;
+  }
+  #iphone-section #text-wrapper p {
+    margin: 0 90px 0;
+  }
+}
+@media screen and (min-width: 1201px) {
+  #iphone-section #text-wrapper p {
+    margin: 0 120px 0;
+  }
+}/*# sourceMappingURL=style.css.map */
