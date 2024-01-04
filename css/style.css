@@ -511,16 +511,6 @@ ion-icon {
 }
 
 /* IMPORT _RESPONSIVE.SCSS */
-/*  */
-/* @media screen and (min-width: 480px){
-    #header-menu{
-        #logo{
-            span{
-                margin: 140px;
-            }
-        }
-    }
-} */
 @media screen and (min-width: 600px) {
   #header-menu #logo span {
     margin: 200px;

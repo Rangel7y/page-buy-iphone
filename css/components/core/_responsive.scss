@@ -1,19 +1,77 @@
 
-/* Mobile */
-@media (max-width: 400px){
-    #header-ctn{
-        nav{
-            ul{
-                li{
-                    display: none;
-                }
+@media screen and (min-width: 600px){
+    #header-menu{
+        #logo{
+            span{
+                margin: 200px;
             }
         }
-        #search{
-            margin-left: 180px;
-        }
-        #logo, #search, #cart{
-            display: flex;        
+    }
+    #iphone-section{
+        #text-wrapper{
+            p{
+                margin: 0 35px 0; 
+            }
         }
     }
 }
+
+@media screen and (min-width: 801px){
+    #header-menu{
+        #logo{
+            span{
+                margin: 285px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1025px){
+
+    #header-menu{
+        width: 100%;
+
+        #logo{
+            margin-left: 35px;
+        }
+        #cart{
+            margin-right: 35px;
+        }
+
+        #show-menu-links{
+            display: none;
+        }
+    }
+
+    #header-nav{
+        ul{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+
+            li:last-child{
+                display: none;
+            }
+        }
+    }
+
+    #iphone-section{
+        #text-wrapper{
+            p{
+                margin: 0 90px 0; 
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1201px){
+
+    #iphone-section{
+        #text-wrapper{
+            p{
+                margin: 0 120px 0; 
+            }
+        }
+    }
+}
+
